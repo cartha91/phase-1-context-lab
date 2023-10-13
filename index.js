@@ -70,3 +70,5 @@ function findEmployeeByFirstName(srcArray, firstName) {
 function calculatePayroll(employeeRecords) {
     return employeeRecords.reduce((memo, rec) => memo + allWagesFor.call(rec), 0);
 }
+
+/// without the bind() function we could not ensure the the callback fuction would reference the correct object.
